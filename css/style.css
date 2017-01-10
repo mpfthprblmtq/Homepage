@@ -1,0 +1,511 @@
+
+/************************************************************************/
+/*  Global CSS                                                          */
+/************************************************************************/
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 1.8;
+}
+
+p {
+    font-size: 16px;
+    color: #565656;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-family: Georgia;
+	font-size: 80px;
+	color: #DDDDDD;
+}
+
+h2 {
+	font-size: 50px;
+	color: #76323F;
+	font-family: 'Open Sans', sans-serif !important;
+	margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+	font-size: 30px;
+	color: #76323F;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	margin-bottom: 20px;
+	padding-top: 30px;
+}
+
+h4 {
+	font-size: 20px;
+	color: #565656;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 20px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.row {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.quote {
+    text-align: center;
+}
+
+hr.section {
+    width: 100%;
+    border-top: 1px solid #565656;
+}
+
+hr.sub-section {
+	width: 40%;
+	border-top: 1px solid 565656;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.bg-tan {
+    background-color: #DFBE9F;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.bg-grain {
+	background-color: #E7DEE7;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.bg-off-white {
+    background-color: #FDFCF9;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.bg-blackboard {
+	background-color: #565656;
+	padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+/************************************************************************/
+/*  Profile                                                             */
+/************************************************************************/
+
+#profile .about { margin-left: 30px; margin-right: 30px; padding-top: 10px; }
+#profile img { padding-top: 30px; margin-left: auto; margin-right: auto; display: block; }
+#profile .content p { text-align: left; }
+
+/************************************************************************/
+/*  Experience                                                          */
+/************************************************************************/
+
+#experience .experience .exp-pos { display: block; padding-top: 8px; margin-bottom: 10px; }
+#experience .experience .exp-link { display: block; padding-top: 8px; margin-bottom: 10px; }
+#experience .not-quote { text-align: left; }
+
+/************************************************************************/
+/*  Abilities                                                           */
+/************************************************************************/
+
+#abilities ul.no-bullets { 
+	list-style-type: none;
+	margin: 0px; 
+	padding: 0px; 
+	text-align: left;
+	color: #565656;
+	font-family: 'Open Sans', sans-serif; 
+}
+#abilities ul > li { min-height: 30px; padding: 3px 0px; }
+#abilities ul > li:hover { background: #F2F2F2; }
+#abilities ul > li .ability-head { display: inline-block; width: 60%; }
+#abilities ul > li .ability-score { float: right; }
+#abilities ul > li .ability-score .glyphicon { 
+	color: #DFE0E0; 
+	font-size: 14px; 
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#abilities ul > li .ability-score .glyphicon.filled { color: #76323F; }
+#abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 
+
+/************************************************************************/
+/*  Projects (See below for more figure animation css)                  */
+/************************************************************************/
+
+#projects .row > div { margin-bottom: 30px; }
+#projects figure { position: relative; overflow: hidden; }
+#projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
+#projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
+#projects figure img { width: 110%; }
+#projects figure figcaption {
+    padding: 20px 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+#projects figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+#projects figure .icon { 
+	background: #76323F;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 48px;
+	height: 48px;
+}
+#projects figure .icon span {
+	font-size: 18px;
+	line-height: 18px;
+	padding: 15px;
+}
+
+/************************************************************************/
+/*  Contact secion, as well as the submission page                      */
+/************************************************************************/
+
+#contact hr { border-top: 1px solid #DDDDDD; opacity: 0.6; }
+#contact h4 { color: #DDDDDD; opacity: 0.6; }
+#contact .contact-info p span { margin-right: 20px; color: #DDDDDD; opacity: 0.6; filter:alpha(opacity=60); }
+#contact .contact-info p { display: block; color: #DDDDDD; opacity: 0.6; font-size: 20px; padding-top: 10px; }
+#contact .contact-info span p { display: block; color: #DDDDDD;}
+#contact .socials span a p { padding-top: 10px; color: #DDDDDD; font-size: 20px; }
+#contact .socials img { margin-right: 15px; }
+#contact a { display: block; line-height: 32px; margin-bottom: 20px; opacity: 0.6; filter:alpha(opacity=60);  }
+#contact a:hover { opacity: 1; filter:alpha(opacity=100); text-decoration: none; }
+#contact ul.no-bullets { list-style-type: none; color: #DDDDDD;}
+#contact .form { margin-top: 20px; }
+#contact .form p { vertical-align: middle; display: inline; font-family: 'Open Sans', sans-serif; font-size: 20px; color: #DDDDDD; opacity: 0.6; }
+#contact .form button { vertical-align: middle; display: inline; margin-left: 15px; font-family: 'Open Sans', sans-serif; }
+#contact .modal-header .modal-title { color: #000000; }
+#contact .modal-body { position: absolute; background-color: #DDDDDD; font-family: 'Open Sans', sans-serif; color: #000000; }
+
+#contact-submission-page body { background-color: #565656; }
+#contact-submission-page .row { width: 100%; }
+#contact-submission-page .logo { color: #737C6B; font-size: 200px; }
+#contact-submission-page .margin { padding-bottom: 20px; }
+#contact-submission-page .rounded { 
+    top: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-radius: 10px; 
+ 	box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+ 	background-color: #FFFFFF;
+}
+
+/*************************************************************************/
+/*  The footer content                                                   */
+/*************************************************************************/
+
+#footer { height: 80px; background-color: black; }
+#footer p { font-family: 'Open Sans', sans-serif; font-size: 20px; padding-top: 25px;}
+#footer .scroll-up {
+    position: absolute;
+    display: block;
+    height: 80px;
+    width: 110px;
+    bottom: 100%%;
+    right: 5%;
+    background-color: #222222;
+    opacity: 0.8;
+    text-align: center;
+}
+#footer .scroll-up-button .glyphicon {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-right: 0px;
+    padding-top: 20px;
+    animation-name: wiggle;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    font-weight: 600;
+}
+
+/************************************************************************/
+/*  The header content, including parallax and formatting               */
+/************************************************************************/
+
+.parallax {
+    /* The image used */
+    background-image: url(/images/mountains.jpg);
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerContent {
+    /* positioning */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 100%;
+    /* font stuff */
+    text-align: center;
+    font-family: Georgia;
+    color: #dddddd;
+    text-shadow: 5px 10px 10px #555;
+}
+
+.headerContent h1 {
+    width: 100%;
+    font-size: 80px;
+}
+
+.headerContent p {
+    font-family: Georgia;
+	font-size: 20px;
+	color: #DDDDDD;
+    text-align: center;
+}
+
+hr.head {
+    width: 50%;
+}
+
+.scroll-down {
+    height: 80px;
+    width: 110px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    background-color: #222222;
+    opacity: 0.8;
+    text-align: center;
+    z-index: 6;
+}
+
+.scroll-down-button .glyphicon {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-right: 0px;
+    padding-top: 20px;
+    animation-name: wiggle;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    font-weight: 600;
+}
+
+/************************************************************************/
+/*  Bootstrap CSS for navbar                                            */
+/************************************************************************/
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 10px 0;
+        font-size: 12px;
+        letter-spacing: 3px;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 0;
+    }
+    .page-scroll {
+        background: none;
+    }
+    .page-scroll:hover {
+        color: black !important;
+    }
+}
+
+/************************************************************************/
+/*  Bootstrap CSS for image transformation                              */
+/************************************************************************/
+
+.thumbnail {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transform: translate(-50%, -50%);
+    /* Safari and Chrome */
+    -moz-transform: translate(-50%, -50%);
+    /* Firefox */
+    -ms-transform: translate(-50%, -50%);
+    /* IE 9 */
+    -o-transform: translate(-50%, -50%);
+    /* Opera */
+    transform: translate(-50%, -50%);
+}
+
+.image img {
+    -webkit-transition: all 0.5s ease;
+    /* Safari and Chrome */
+    -moz-transition: all 0.5s ease;
+    /* Firefox */
+    -o-transition: all 0.5s ease;
+    /* IE 9 */
+    -ms-transition: all 0.5s ease;
+    /* Opera */
+    transition: all 0.5s ease;
+}
+
+.image:hover img {
+    -webkit-transform: scale(1.1);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.1);
+    /* Firefox */
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -o-transform: scale(1.1);
+    /* Opera */
+    transform: scale(1.1);
+}
+
+/************************************************************************/
+/*  Effects for figure objects                                          */
+/************************************************************************/
+
+figure.effect {
+    background: #76323F;
+    color: #FFF;
+}
+
+figure.effect img {
+    width: -webkit-calc(100% + 20px);
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+figure.effect:hover img {
+    opacity: 0.2;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect figcaption {
+    text-align: left;
+}
+
+figure.effect h3 {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect:hover h3 {
+    opacity: 1;
+}
+
+figure.effect h3::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+
+figure.effect:hover h3::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect p {
+    padding-top: 10px;
+    opacity: 0;
+    color: #FFFFFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+}
+
+figure.effect:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/************************************************************************/
+/*  Some @ stuff, including fonts, animations, and media tags           */
+/************************************************************************/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+
+@keyframes wiggle {
+    0% {
+        padding-top: 20px;
+    }
+    50% {
+        padding-top: 28px;
+    }
+    100% {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row {
+        width: 95%;
+    }
+
+    #profile .about { text-align: center; }
+    #profile .about h3 { text-align: center; }
+
+    #experiences h3 { text-align: center; }
+    #experiences span .exp-block { display: none; }
+
+    #abilities h3 { text-align: center; }
+
+    #projects h3 { text-align: center; }
+
+    #footer p {
+        text-align: left;
+        padding-left: 50px;
+    }
+}
+
+/* END STYLE.CSS */
